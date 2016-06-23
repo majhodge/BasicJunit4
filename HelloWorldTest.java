@@ -1,3 +1,4 @@
+import java.util.LinkedList;
 import static org.junit.Assert.*;
 import org.junit.*;
 
@@ -16,6 +17,16 @@ public class HelloWorldTest {
 		assertEquals(sumResult, expectedSum);
 	}
 	
+	@Test 
+	public void testAddToMyBag() {
+		LinkedList<String> list = new LinkedList<String>();
+		list.add("marker");
+		list.add("pens");
+		list.add("book");
+		
+		list.assertEquals 
+	}
+	
 	@Ignore
 	public void testSums() {
 		assertNotEquals(sumResult, expectedSum);
@@ -23,6 +34,6 @@ public class HelloWorldTest {
 	
 	@After
 	public void finish() {
-		System.out.println("Chillin");
+		System.out.println("tearDown method");
 	}
 }
